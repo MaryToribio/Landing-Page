@@ -6,13 +6,32 @@
 }
 
 :root {
- --tex-color       :#fff;
- --text-color-alt  :#a1a1a6;
- --accent-color    : #0071e3;
- --accent-color-alt: #2997ff;
- --body-bg         :#000;
+   --tex-color       :#fff;
+   --text-color-alt  :#a1a1a6;
+   --accent-color    : #0071e3;
+   --accent-color-alt: #2997ff;
+   --body-bg         :#000;
 }
 
 body {
-    colo:
+   color           : var(--text-color);
+   font-family     : var(--body-font);
+   background-color: var(--body-bg);
+   overflow-x      : hidden;
 }
+
+button{
+    all: unset;
+    cursor:pointer;
+}
+
+
+a {
+    color           : var(--accent-color-alt);
+    text-decoration : none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+/* averiguar normalize */
